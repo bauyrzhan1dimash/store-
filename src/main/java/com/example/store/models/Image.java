@@ -1,11 +1,10 @@
 package com.example.store.models;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
 
 @Entity
 @Table(name = "images")
@@ -28,7 +27,7 @@ public class Image {
     @Column(name = "isPreviewImage")
     private boolean isPreviewImage;
     @Lob
-    private byte[] bytes ;
+    private byte[] bytes;
     @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)
     private Product product;
 }
