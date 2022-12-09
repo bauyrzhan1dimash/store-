@@ -2,9 +2,10 @@ package com.example.store.models;
 
 import javax.persistence.*;
 
+
 @Entity
 @Table(name = "images")
-public class Image {
+public class  Image {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

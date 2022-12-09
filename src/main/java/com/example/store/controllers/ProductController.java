@@ -2,7 +2,6 @@ package com.example.store.controllers;
 
 import com.example.store.models.Product;
 import com.example.store.models.User;
-
 import com.example.store.services.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
